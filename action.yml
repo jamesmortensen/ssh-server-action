@@ -106,4 +106,4 @@ runs:
         done
       } &
 
-      ngrok tcp --log stdout --log-format term ${{ steps.get-free-port.outputs.port }}
+      ngrok tcp --log stdout --log-format term ${{ steps.get-free-port.outputs.port }} &
